@@ -259,6 +259,33 @@
       margin-bottom: 1rem;
     }
 
+    /* Upcoming events */
+    .events {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+    .events h3 {
+      font-size: 1.45rem;
+      margin-bottom: 0.6rem;
+    }
+    .events p { color: var(--ink-soft); }
+    .events .event-date {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      margin-bottom: 0.5rem;
+    }
+    .events .event-where {
+      font-size: 0.95rem;
+      color: var(--ink-faint);
+    }
+    .events .btn { margin-top: 0.4rem; }
+
     /* Get involved */
     .involved {
       background-color: var(--paper-deep);
@@ -340,9 +367,31 @@
         <h1 id="hero-title">Where formal verification, AI, and finance meet.</h1>
         <p class="lede">A monthly meetup in New York for people who care about software you can actually prove is right. Come say hi!</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeNLo5F8dHKaar3HXK4NGsoBsonKBh2BOf5Ajte21z1XjJmXg/viewform" target="_blank" rel="noopener">Stay in the loop</a>
-          <p class="microcopy">First event coming soon. Sign up to hear when.</p>
+          <a class="btn btn-primary" href="https://luma.com/jd36velq" target="_blank" rel="noopener">RSVP for November 12</a>
+          <p class="microcopy">Kickoff drinks on Thursday, November 12. Or <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNLo5F8dHKaar3HXK4NGsoBsonKBh2BOf5Ajte21z1XjJmXg/viewform" target="_blank" rel="noopener">sign up</a> to hear about future events.</p>
         </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="upcoming-title">
+      <div class="wrap">
+        <p class="eyebrow">Upcoming</p>
+        <h2 id="upcoming-title">Our first two evenings.</h2>
+        <ul class="events">
+          <li class="card">
+            <p class="event-date">Thursday, November 12 &middot; 6&ndash;8pm</p>
+            <h3>Kickoff drinks</h3>
+            <p>A relaxed evening to meet others around the city working on formal verification, AI, and finance. Light bites and the first drinks are on us.</p>
+            <p class="event-where">The Churchill Tavern, 45 E 28th St (Garden Room, upstairs)</p>
+            <a class="btn btn-primary" href="https://luma.com/jd36velq" target="_blank" rel="noopener">RSVP</a>
+          </li>
+          <li class="card">
+            <p class="event-date">Thursday, December 10</p>
+            <h3>First talk night</h3>
+            <p>With Serdar Tasiran (AWS) speaking.</p>
+            <p class="event-where">Venue to be announced</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -421,6 +470,7 @@
       <p class="foot-name">Verified NYC</p>
       <p class="foot-tag">Where formal verification, AI, and finance meet.</p>
       <ul class="foot-links">
+        <li><a href="https://luma.com/jd36velq" target="_blank" rel="noopener">RSVP for November 12</a></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeNLo5F8dHKaar3HXK4NGsoBsonKBh2BOf5Ajte21z1XjJmXg/viewform" target="_blank" rel="noopener">Stay in the loop</a></li>
       </ul>
     </div>
