@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>Verified NYC. Where formal verification, AI, and finance meet.</title>
   <meta name="description" content="A monthly, in-person meetup in NYC for people who build software that has to be right, and who care how AI fits in.">
 
@@ -25,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
+      color-scheme: light dark;
       --paper: #f7f2e9;
       --paper-deep: #f1e9da;
       --ink: #2b2620;
@@ -32,11 +34,37 @@
       --ink-faint: #6f6557;
       --accent: #c96f3f;
       --accent-deep: #98491f;
+      --accent-hover: #813c18;
       --accent-tint: #f3e2d3;
+      --on-accent: #fff;
+      --on-ink: #fff;
       --line: #e2d7c4;
       --card: #fffdf8;
+      --button-shadow: rgba(152, 73, 31, 0.22);
+      --button-shadow-hover: rgba(152, 73, 31, 0.3);
       --serif: "Newsreader", Georgia, "Times New Roman", serif;
       --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Follow the device's appearance setting, including changes while open. */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #201d19;
+        --paper-deep: #29241f;
+        --ink: #f3ece2;
+        --ink-soft: #d3c6b7;
+        --ink-faint: #b4a797;
+        --accent: #dfa077;
+        --accent-deep: #e6a177;
+        --accent-hover: #f2bd98;
+        --accent-tint: #3d2d24;
+        --on-accent: #241b14;
+        --on-ink: #201d19;
+        --line: #4b3f33;
+        --card: #28231e;
+        --button-shadow: rgba(0, 0, 0, 0.24);
+        --button-shadow-hover: rgba(0, 0, 0, 0.32);
+      }
     }
 
     * { box-sizing: border-box; }
@@ -67,7 +95,7 @@
       top: 0;
       z-index: 100;
       background-color: var(--ink);
-      color: #fff;
+      color: var(--on-ink);
       padding: 0.7rem 1.1rem;
       border-radius: 0 0 8px 0;
       font-family: var(--sans);
@@ -77,7 +105,7 @@
     }
     .skip-link:focus {
       left: 0;
-      color: #fff;
+      color: var(--on-ink);
     }
 
     .wrap {
@@ -137,14 +165,14 @@
     }
     .btn-primary {
       background-color: var(--accent-deep);
-      color: #fff;
-      box-shadow: 0 6px 18px rgba(152, 73, 31, 0.22);
+      color: var(--on-accent);
+      box-shadow: 0 6px 18px var(--button-shadow);
     }
     .btn-primary:hover {
-      background-color: #813c18;
-      color: #fff;
+      background-color: var(--accent-hover);
+      color: var(--on-accent);
       transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(152, 73, 31, 0.3);
+      box-shadow: 0 10px 24px var(--button-shadow-hover);
     }
 
     /* Header */
@@ -407,7 +435,7 @@
       <div class="wrap prose">
         <p class="eyebrow">Why now</p>
         <h2 id="why-title">The question got urgent.</h2>
-        <p>AI writes a lot of our code and math now. So "how do we actually know it's right?" isn't just an academic question anymore. New York has the people for this, and the problems that need it. It just hasn't had a room to talk it over, so we're making one.</p>
+        <p>AI writes a lot of our code and math now. So "how do we actually know it's right?" isn't just an academic question anymore. New York has the people for this, and the problems that need it. We wanted a regular room to talk it over, so we're making one.</p>
       </div>
     </section>
 
@@ -416,6 +444,7 @@
         <p class="eyebrow">Format</p>
         <h2 id="format-title">Mostly just talking.</h2>
         <p>Monthly evenings, kept low-key on purpose. Some nights feature a short talk from someone in the community; others are just good conversation. A spot to chat between events is coming soon.</p>
+        <p>Into Lean specifically? Our friends at <a href="https://lean.nyc" target="_blank" rel="noopener">lean.nyc</a> run a great weekly in-person meetup on Sundays.</p>
       </div>
     </section>
 
@@ -472,6 +501,7 @@
       <ul class="foot-links">
         <li><a href="https://luma.com/jd36velq" target="_blank" rel="noopener">RSVP for November 12</a></li>
         <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeNLo5F8dHKaar3HXK4NGsoBsonKBh2BOf5Ajte21z1XjJmXg/viewform" target="_blank" rel="noopener">Stay in the loop</a></li>
+        <li>Friends: <a href="https://lean.nyc" target="_blank" rel="noopener">lean.nyc</a></li>
       </ul>
     </div>
   </footer>
